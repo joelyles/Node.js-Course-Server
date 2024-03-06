@@ -1,0 +1,8 @@
+20240306	06:28:00	ecc2d0ce-eeac-4ec1-8963-20fc6f5b76d0	/index	GET
+20240306	06:28:00	ca8ef149-c8ad-439b-82f8-b9a583c3306d	/CSS/stylesheet.css	GET
+20240306	06:28:00	87686acf-628c-4b43-8d18-feac83fe3911	/img/nasa-unsplash.jpg	GET
+20240306	06:32:01	1a2b57f1-4772-4f2c-940b-1b3e2275e939	/index	GET
+20240306	06:32:09	c15df7e1-3021-4db1-9fa1-b97feea7af37	/index	GET
+20240306	06:32:25	6bddaf71-91a1-4607-899a-15b3f0b1be76	/index	GET
+20240306	06:32:25	d5d2fffe-3dfd-455a-9bde-f2a32db3496a	/CSS/stylesheet.css	GET
+20240306	06:32:25	32473381-915f-4b27-a850-685f4e554606	/img/nasa-unsplash.jpg	GET
