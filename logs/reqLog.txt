@@ -14,3 +14,17 @@
 20240307	04:12:52	0bbc38a5-96ee-4663-bfc3-9ef5adbee037	/old-page	GET
 20240307	04:12:52	0c0524f5-51b0-4423-a70a-882dba415dd8	/new-page.html	GET
 20240307	04:12:52	2274c22a-d442-4427-a6be-c53207639117	/CSS/stylesheet.css	GET
+20240307	05:41:36	9a5ff708-7325-446a-a811-ac7c4e157821	GET	undefined	/index
+20240307	05:41:36	9603e111-4f64-4034-89e9-b291cdeaeb8a	GET	undefined	/CSS/stylesheet.css
+20240307	05:41:36	6e7d0dd8-c21d-4fb5-be4b-4217b0822fcc	GET	undefined	/img/nasa-unsplash.jpg
+20240307	05:44:22	8adcef0b-c0f9-4226-a582-436c3681f863	GET	undefined	/index
+20240307	05:44:22	fe03a2ff-275a-4de1-9131-a92285022c4f	GET	undefined	/CSS/stylesheet.css
+20240307	05:44:22	50b6c100-a537-4c0e-acfd-5685fe52a507	GET	undefined	/img/nasa-unsplash.jpg
+20240307	05:44:35	a0674a77-83bc-4954-acb3-594bcfb15f68	GET	undefined	/new-page
+20240307	05:44:35	38696c31-172e-413f-a0aa-6a8ce65ba204	GET	undefined	/CSS/stylesheet.css
+20240307	06:01:01	1e5a8716-f785-4da6-9aa3-2c8f8c9e8265	GET	undefined	/index
+20240307	06:01:01	dec8e180-145f-4b1a-bd84-2e35c6630a52	GET	undefined	/CSS/stylesheet.css
+20240307	06:01:01	d3d4a25c-6ea4-45e5-a278-79280064a7c5	GET	undefined	/img/nasa-unsplash.jpg
+20240307	06:02:28	478755cd-e5b2-41e1-862b-1265c119e0a8	GET	undefined	/index
+20240307	06:02:28	00c8d3ae-7b19-48a1-9fd0-3e2cccca8eb3	GET	undefined	/CSS/stylesheet.css
+20240307	06:02:28	51362127-3a66-4f6c-93bd-32fdde4b3ae2	GET	undefined	/img/nasa-unsplash.jpg
