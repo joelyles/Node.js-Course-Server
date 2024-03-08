@@ -33,8 +33,15 @@ app.use(express.json());
 
 // serve static files (css, js)
 app.use(express.static(path.join(__dirname, '/public')));
+// serve static files to subdir
+app.use('/subdir', express.static(path.join(__dirname, '/public')));
 
-// defining route
+// defining routes
+
+app.use('/', require('./routes/root'));
+app.use('/subdir', require('./routes/subdir'));
+app.use('/employees', require('./routes/api/employees'));
+
 app.get('^/$|/index(.html)?', (req, res) => {
     // res.sendFile('./views/index.html', { root: __dirname });
     res.sendFile(path.join(__dirname, 'views', 'index.html'));
@@ -46,33 +53,6 @@ app.get('/new-page(.html)?', (req, res) => {
 
 app.get('/old-page(.html)?', (req, res) => {
     res.redirect(301, '/new-page.html'); // 302 by default
-});
-
-// route handlers
-// chaining route handlers
-
-const one = (req, res, next) => {
-    console.log('one');
-    next();
-}
-
-const two = (req, res, next) => {
-    console.log('two');
-    next();
-}
-
-const three = (req, res) => {
-    console.log('three');
-    res.send('finished!');
-}
-
-app.get('/chain(.html)?', [one, two, three]);
-
-app.get('/hello(.html)?', (req, res, next) => {
-    console.log('attempted to load hello.html');
-    next()
-}, (req, res) => {
-    res.send('hello world!');
 });
 
 // changed from app.use('/*',.....) to app.all('*',.....) ~2h55m in course
