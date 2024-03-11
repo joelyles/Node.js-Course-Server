@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const cors = require('cors');
+const corsOption = require('./config/corsOptions');
 const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
 const PORT = process.env.PORT || 3500;
@@ -11,17 +12,6 @@ app.use(logger);
 
 // cross origin resource sharing
 // whitelist items are domains that can access the backend
-const whitelist = ['website here', 'http://127.0.0.1:5500', 'http://localhost:3500'];
-const corsOptions = {
-    origin: (origin, callback) => {
-        if (whitelist.indexOf(origin) !== -1 || !origin) {
-            callback(null, true)
-        } else {
-            callback(new Error('not allowed by CORS'));
-        }
-    },
-    optionsSuccessStatus: 200
-}
 app.use(cors());
 
 // build-in middleware to handle urlencoded data
@@ -33,13 +23,10 @@ app.use(express.json());
 
 // serve static files (css, js)
 app.use(express.static(path.join(__dirname, '/public')));
-// serve static files to subdir
-app.use('/subdir', express.static(path.join(__dirname, '/public')));
 
 // defining routes
 
 app.use('/', require('./routes/root'));
-app.use('/subdir', require('./routes/subdir'));
 app.use('/employees', require('./routes/api/employees'));
 
 app.get('^/$|/index(.html)?', (req, res) => {
