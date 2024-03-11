@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const employeesController = require('../../controllers/employeesController');
+const employeesController = require('../../controllers/employeesController.js');
 
 router.route('/')
     .get(employeesController.getAllEmployees)
@@ -11,4 +11,4 @@ router.route('/')
 router.route('/:id')
     .get(employeesController.getEmployee);
 
-modeule.exports = router;
+module.exports = router;

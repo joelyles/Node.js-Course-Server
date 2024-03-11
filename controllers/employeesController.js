@@ -9,7 +9,7 @@ const getAllEmployees = (req, res) => {
     res.json(data.employees);
 }
 
-const createNewEmpployee = (req, res) => {
+const createNewEmployee = (req, res) => {
     const newEmployee = {
         id: data.employees[data.employees.length -1].id + 1 || 1,
         firstname: req.body.firstname,
@@ -57,7 +57,7 @@ const getEmployee = (req, res) => {
 
 module.exports = {
     getAllEmployees,
-    createNewEmpployee,
+    createNewEmployee,
     updateEmployee,
     deleteEmployee,
     getEmployee
