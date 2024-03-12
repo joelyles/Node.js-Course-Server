@@ -2,17 +2,23 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const cors = require('cors');
-const corsOption = require('./config/corsOptions');
+const corsOptions = require('./config/corsOptions');
 const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
+const verifyJWT = require('./middleware/verifyJWT.js');
+const cookieParser = require('cookie-parser');
+const credentials = require('./middleware/credentials.js');
 const PORT = process.env.PORT || 3500;
 
 // custom middleware logger
 app.use(logger);
 
+// use credentials before CORS and fetch cookies credentials
+app.use(credentials);
+
 // cross origin resource sharing
 // whitelist items are domains that can access the backend
-app.use(cors());
+app.use(cors(corsOptions));
 
 // build-in middleware to handle urlencoded data
 // form data: 'content-type: application/x-www-form-urlencoded'
@@ -20,6 +26,9 @@ app.use(express.urlencoded({ extended: false }));
 
 // build-in middleware for json
 app.use(express.json());
+
+// middleware for cookies
+app.use(cookieParser());
 
 // serve static files (css, js)
 app.use(express.static(path.join(__dirname, '/public')));
@@ -29,6 +38,10 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.use('/', require('./routes/root'));
 app.use('/register', require('./routes/register'));
 app.use('/auth', require('./routes/auth'));
+app.use('/refresh', require('./routes/refresh'));
+app.use('/logout', require('./routes/logout'));
+
+app.use(verifyJWT);
 app.use('/employees', require('./routes/api/employees'));
 
 app.get('^/$|/index(.html)?', (req, res) => {
