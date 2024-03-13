@@ -65,3 +65,17 @@
 20240311	05:45:59	70226d5f-b9ae-437c-89b5-bb71f33b5a01	GET	undefined	/index
 20240311	05:45:59	76bb1b53-a308-41e6-8a92-9cd7b85362ec	GET	undefined	/img/nasa-unsplash.jpg
 20240311	05:45:59	5d299d3b-ee0b-43e6-ae71-b0368f6ed615	GET	undefined	/CSS/stylesheet.css
+20240313	05:17:09	50c8db09-833c-4bb9-abef-4f19a73fb898	GET	undefined	/
+20240313	05:18:32	3c96b451-8f6a-497d-8244-aa340f0a2f6e	GET	undefined	/auth
+20240313	05:18:36	2a750b24-1643-47af-9ea7-89a1a731c93c	GET	undefined	/auth
+20240313	05:18:51	ba728116-497d-4571-a45c-945924b2a6f3	GET	undefined	/auth
+20240313	05:19:52	327c930c-6f57-4e77-b4e2-a49f34bedab9	GET	undefined	/employees
+20240313	05:20:40	25165b89-777f-4c2e-bd3a-4edba19055ac	GET	undefined	/model/employees
+20240313	05:22:19	86b21d77-e7e9-4b3b-9e27-014dc21ab030	GET	undefined	/employees
+20240313	05:22:58	16762bb7-003d-4195-9f62-081c60fac9e4	GET	undefined	/employees
+20240313	05:26:00	6baa4d6b-8e27-433d-9c7c-fbe7c2634b9f	GET	undefined	/register
+20240313	05:27:56	c2ad209b-b0fb-4912-b999-f4c551c58d8b	GET	undefined	/register
+20240313	05:50:20	5a748916-0d46-428a-afc0-db68cd75e343	GET	undefined	/register
+20240313	05:50:30	ce8ffac3-44ea-433f-ad0b-0aa5cf3e9f94	POST	undefined	/register
+20240313	05:50:42	68a7efd8-b089-4ba5-9f6b-f4a8eac12750	GET	undefined	/employees
+20240313	05:51:31	44ab9370-46a5-4736-a5f0-7662a150c233	GET	undefined	/employees
