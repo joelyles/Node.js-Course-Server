@@ -1,1 +1,11 @@
-[{"username":"user1","roles":{"User":2001},"password":"$2b$10$JEBif1OLR8F.TLP8ui9JnOqAIFueddr8Pu/J4RZ15zw/vUDQvoxs."}]
+[
+    {
+        "username":"user1",
+        "roles":{"User":2001},
+        "password":"$2b$10$JEBif1OLR8F.TLP8ui9JnOqAIFueddr8Pu/J4RZ15zw/vUDQvoxs."
+    },
+        
+    {   "username":"user2",
+        "roles":{"User":2001},"password":"$2b$10$1qIsLMtzTcq7tRfBZfqXDu5QDuKI9XO4ysDg0gayrZM2r.H/VarBm"
+    }
+]
