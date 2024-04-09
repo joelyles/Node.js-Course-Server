@@ -102,3 +102,9 @@
 20240315	05:06:10	8618bb8b-704b-4654-a81e-8b93e133e9b1	POST	undefined	/auth
 20240315	05:07:50	5f04aa4e-729e-4b0a-8974-94cf465db277	POST	undefined	/auth
 20240315	05:08:03	f66f7c1a-d1be-4305-9389-12ea17282dba	POST	undefined	/employees
+20240409	05:35:53	6da5ccba-9a36-4024-9a44-00a528c3c5e6	OPTIONS	undefined	/register
+20240409	05:35:53	12fbd7df-a768-4e23-8689-8c5d3caffa72	POST	undefined	/register
+20240409	05:41:08	d9f2583d-2533-41c2-823f-b9ab1e606368	OPTIONS	undefined	/register
+20240409	05:41:08	7c5b9131-0fa9-4dec-ae62-f1ac275c38c2	POST	undefined	/register
+20240409	05:41:43	c25feb30-b894-4e80-b83e-9f416ec1c69f	OPTIONS	undefined	/register
+20240409	05:41:44	8d0be3f1-eb59-459d-b3ee-43db49225e3a	POST	undefined	/register
