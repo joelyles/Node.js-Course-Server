@@ -108,3 +108,5 @@
 20240409	05:41:08	7c5b9131-0fa9-4dec-ae62-f1ac275c38c2	POST	undefined	/register
 20240409	05:41:43	c25feb30-b894-4e80-b83e-9f416ec1c69f	OPTIONS	undefined	/register
 20240409	05:41:44	8d0be3f1-eb59-459d-b3ee-43db49225e3a	POST	undefined	/register
+20240411	05:32:50	92ce86c6-22ee-4a29-b6a4-f4683e275720	OPTIONS	undefined	/register
+20240411	05:32:50	4917ae19-1fb6-452e-9ce8-0cdbf3e65c96	POST	undefined	/register
