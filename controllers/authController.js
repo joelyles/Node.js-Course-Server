@@ -34,7 +34,7 @@ const handleLogin = async (req, res) => {
         console.log(result);
 
         // refresh token as http only is more secure
-        res.cookie('jwt', refreshToken, { httpOnly: true, sameSite: 'None', maxAge: 24 * 60 * 60 * 1000 }); // secure: true,
+        res.cookie('jwt', refreshToken, { httpOnly: true, sameSite: 'None', secure: true, maxAge: 24 * 60 * 60 * 1000 }); // secure: true,
         res.json({ roles, accessToken });
     } else {
         res.sendStatus(401);
